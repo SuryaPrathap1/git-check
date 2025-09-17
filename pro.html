@@ -3,49 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my web page</title>
+    <title>Document</title>
 </head>
-<body>
-    <h1> hey guys welcome to coffee shop !</h1>
+<body style="background-color: mistyrose;">
+    <form >
+        
+        <center><h1>Student Registration Form</h1></center>
+        <table align="center" cellpadding="8">
+            <tr>
+                <td><label for="Rollno">Roll no:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Student Name:</label></td>
+                <td><input type="text" placeholder="First name"> - 
+                  <input type="text" placeholder="last name"></td>
+            </tr>
+            <tr>
+                <td><label for="father's name">Father's Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date of Birth:</label></td>
+                <td><input type="text"  size="2" maxlength="2" placeholder="day" pattern="{1-31}" > - 
+                    <input type="text" size="2" maxlength="2" placeholder="month" pattern="{1-12}"> - 
+                <input type="text" size="2" maxlength="4" placeholder="year">
+            <span>(DD-MM-YYYY)</span></td>
+            </tr>
+            <tr>
+                <td><label for="mobile number">Mobile no:</label></td>
+                <td> <input type="text" value="+91" size="1" disabled> - <input type="number" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email id:</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password"></td>
+
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" id="male" name="gender" value="Male"><label for="male"  >Male</label>
+                    <input type="radio" id="female" name="gender"value="Female"><labe for="female" >Female</labe></td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="checkbox" > <label for="CSE">CSE</label>
+                <input type="checkbox" > <label for="IT">IT</label>
+            <input type="checkbox" > <label for="ECE">ECE</label>
+        <input type="checkbox" > <label for="CIVIL">CIVIL</label>
+        <input type="checkbox" > <label for="MECH">CSE</label>
+    </td>
+            </tr>
+            <tr>
+                <td><label for="course">Course:</label></td>
+                <td><select name="course" id="course">
+                <option value="" disabled selected hidden>-------------select current course's----------- </option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="M.Com">M.Com</option>
+            <option value="B.Com">B.Com</option></select></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="image">Student Photo:</label>
+                </td>
+                <td><input type="file"  accept="image" </td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td><textarea></textarea></td>
+            </tr>
+            
+            
+        </table>
+        <center><button  type="submit" >Register</button></center>
+    </form>
     
-  <ol>
-    <li>Coffee
-      <ul>
-        <li>Espresso - ₹80</li>
-        <li>Cappuccino - ₹120</li>
-        <li>Latte - ₹150</li>
-        <li>Mocha - ₹170</li>
-      </ul>
-    </li>
-
-    <li>Snacks
-      <ul>
-        <li>Croissant - ₹60</li>
-        <li>Muffin - ₹50</li>
-        <li>Sandwich - ₹90</li>
-      </ul>
-    </li>
-
-    <li>Specials
-      <ul>
-        <li>Cold Coffee - ₹130</li>
-        <li>Caramel Frappe - ₹180</li>
-      </ul>
-    </li>
-    <li>cakes
-      <ul>
-        <li>Cold cake - ₹460</li>
-        <li>Chocolate Cake - ₹590</li>
-        <li>Coffee Cake - ₹300</li>
-      </ul>
-    </li>
-    <li>Bakery Items
-      <ul>
-        <li>Danish pastries - ₹756</li>
-        <li>Brownies - ₹3456</li>
-      </ul>
-    </li>
-  </ol>
-
 </body>
 </html>
